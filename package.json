@@ -1,0 +1,13 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run build-client && node server",
+    "start-local": "npm run build-client && PORT=8080 node server",
+    "build-client": "cd react-star && npm run build && cd .."
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-fetch": "^2.5.0"
+  }
+}
